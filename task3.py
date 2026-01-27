@@ -1,15 +1,15 @@
-def student_info(name="Frido", age=20, gpa=3):
-    print(f"Student name is {name}, {age} years old with a Gpa of {gpa}")
+def check():
+    print("Your account balance is 1000$")
+    prompt = input("Do you want to check account balance again ").lower()
+    if prompt == 'y':
+        check()
+    elif prompt=='n':
+        print("Process Terminated")
+    else:
+        print("Sorry the input is invalid")
+        prompt = input("Do you want to check account balance again ").lower()
+        check()
 
-student_info("Nyinondi", 20, 4)
-student_info(name="Angel", age=20, gpa=4)
-student_info()
+prompt=input("Do you want to check account balance ").lower()
 
-def student_info1(*args, marks):
-    total=sum(marks)
-    print(f"Student marks are {total}")
-student_info1(marks=[20,34,45,50])
-
-def student_info2(*args, name,):
-    print(f'Student name is {name}')
-student_info2(name="fridolin")
+check()

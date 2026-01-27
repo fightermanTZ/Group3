@@ -1,6 +1,4 @@
-def calc(a,b):
-    return a+b, a-b
-
-sum, diff=calc(5,3)
-print(sum)
-print(diff)
+number=1
+while number<100:
+    print(number)
+    sum=number+number
